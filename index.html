@@ -246,20 +246,20 @@ building clean, efficient code and creating seamless user experiences.</pre>
         <form>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Full Name:</label>
-            <input style="background-color:#bbbecb;" type="text" class="form-control" id="recipient-name">
+            <input style="background-color:#bbbecb;" type="text" class="form-control" id="name">
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Email:</label>
-            <input type="email" required class="form-control" style="background-color: #bbbecb;" id="recipient-name">
+            <input type="email" required class="form-control" style="background-color: #bbbecb;" id="email">
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text" style="background-color: #bbbecb;"></textarea>
+            <textarea class="form-control" id="message" style="background-color: #bbbecb;"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer" >
-        <button style="outline: 1px solid #7DFFEF; color: #7DFFEF;" type="button" class="btn move-anime">Send message</button>
+        <button onclick="sendMail()" style="outline: 1px solid #7DFFEF; color: #7DFFEF;" type="button" class="btn move-anime">Send message</button>
       </div>
     </div>
     </div>
@@ -291,6 +291,16 @@ building clean, efficient code and creating seamless user experiences.</pre>
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Xc1INg0vXnIZtUAbq",
+      });
+   })();
+</script>
     <script src="script.js"></script>
   </body>
 </html>
