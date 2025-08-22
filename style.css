@@ -7,8 +7,10 @@ body{
     background: linear-gradient(135deg, #0a192f, #182846);
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
+
 .resume-button{
     color:#7DFFEF;
     outline: 1px solid #7DFFEF;;
@@ -20,10 +22,7 @@ body{
     outline: 1px solid #7DFFEF;
 
 }
-.mail{
-    transform: rotate(90deg);
-    
-    }
+
   .line{
     width: 200px;
     border: none;
@@ -38,7 +37,7 @@ body{
   }
   .about-image:hover{
     filter: hue-rotate(0deg);
-    transform: translate(-10px,-10px);
+    transform: translate(-10px,-10px) !important;
   }
   .bi-caret-right-fill{
     color: #7DFFEF;
@@ -74,27 +73,27 @@ body{
   transition: transform 0.2s ease-in-out !important;
 }
 .move-anime2:hover{
-  transform: translate(-3px,-3px);
-  transition: transform 0.3s,ease;
+  transform: translate(-3px,-3px) !important;
+  transition: transform 0.3s,ease !important;
   color: #0A192F;
 }
 
 .link-icon:hover{
   color: #7DFFEF;
-  transform: scale();
+  
 
 }
 
 .card:hover{
   
-  transform: translateY(-20px);
+  transform: translateY(-20px) !important;
 
   
   
 
 }
 .card{
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out !important;
 }
 
 .card:hover .card-title{
@@ -102,9 +101,10 @@ body{
 }
 .project-video{
    filter: sepia(0.6) hue-rotate(180deg) saturate(2) opacity(70%);
-    transition:  filter 0.5s ease-in-out;  
+    transition:  filter 0.5s ease-in-out !important;  
   
 }
 .card:hover .project-video{
   filter: opacity(100%);
 }
+
