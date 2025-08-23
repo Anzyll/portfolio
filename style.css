@@ -8,6 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    
 
 }
 
@@ -110,3 +111,9 @@ body{
   filter: opacity(100%);
 }
 
+@media  screen and (max-width :600px){
+  .heading1,heading2{
+    font-size: 3.5rem !important;
+  }
+  
+}
